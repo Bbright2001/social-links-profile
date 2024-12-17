@@ -1,0 +1,103 @@
+/*
+=================
+fonts
+=================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*
+=================
+Global styles
+=================
+*/
+
+:root {
+    --active-state-clr: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: #000;
+    --grey-700:hsl(0, 0%, 20%);
+    --grey-800:hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --spacing: 0.1rem;
+    --ff-body: font-family: "Inter", sans-serif;
+}
+/*
+=================
+body reset
+=================
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    background: var(--clr-black);
+    font-size: 1rem;
+     color: var(--clr-white);
+     font-family: var(--ff-body);
+}
+a{
+    text-decoration: none;
+}
+/*
+=================
+container
+=================
+*/
+    .con {
+        max-width: 350px;
+        margin: 5rem auto;
+        background: var(--grey-900);
+        padding: 27px 40px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+/*
+=================
+Avatar Image
+=================
+*/
+
+img{
+    width: 90px;
+    display: block;
+    margin: 5px auto;
+    border-radius: 50%;
+}
+/*
+=================
+Avatar Info
+=================
+*/
+h2{
+    font-size: 25px;
+    font-family: var(--ff-body);
+    color: var(--clr-white);
+    margin: 20px 5px 5px;
+}
+
+h4{
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    margin: 5px 1px 15px;
+}
+p{
+    font-size: 12px;
+}
+
+.con a{
+    display: block;
+    background: var(--grey-700);
+    color: var(--clr-white);
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.con a:hover{
+    background-color: var(--active-state-clr);
+    cursor: pointer;
+    color: var(--clr-black);
+}
